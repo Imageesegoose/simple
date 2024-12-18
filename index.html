@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Website</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: #f4f4f4;
+    }
+
+    header {
+      width: 100%;
+      background-color: #fff;
+      padding: 20px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      max-width: 1200px;
+    }
+
+    .description {
+      flex: 1;
+      padding: 20px;
+      background-color: #fff;
+    }
+
+    .gallery {
+      flex: 2;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 10px;
+      padding: 20px;
+      background-color: #eee;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    nav {
+      width: 100%;
+      background-color: #333;
+      display: flex;
+      justify-content: center;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+    }
+
+    nav ul li {
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 16px;
+    }
+
+    .logo {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    .logo img {
+      width: 100px;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Page Title</h1>
+    <p>Short description about this page and its content.</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Gallery 1</a></li>
+      <li><a href="gallery2.html">Gallery 2</a></li>
+      <li><a href="gallery3.html">Gallery 3</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <div class="description">
+      <h2>Gallery Title</h2>
+      <p>A brief description of the gallery content goes here.</p>
+    </div>
+    <div class="gallery">
+      <img src="gallery/image1.jpg" alt="Image 1">
+      <img src="gallery/image2.jpg" alt="Image 2">
+      <img src="gallery/image3.jpg" alt="Image 3">
+    </div>
+  </div>
+
+  <div class="logo">
+    <img src="logo.png" alt="Logo">
+  </div>
+</body>
+</html>
